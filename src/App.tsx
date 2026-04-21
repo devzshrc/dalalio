@@ -20,17 +20,45 @@ const ScrollToTop = () => {
 
 const Footer = () => (
   <footer className="w-full bg-white border-t border-zinc-100 mt-20">
-    <div className="max-w-7xl mx-auto py-16 md:py-20 px-6 flex flex-col md:flex-row items-center justify-between text-[10px] uppercase font-bold tracking-[0.2em] text-zinc-400">
-      <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 mb-12 md:mb-0">
-        <span className="text-zinc-900 w-full md:w-auto text-center md:text-left mb-4 md:mb-0">© 2026 dalal.io</span>
-        <Link to="#" className="hover:text-harvest-green transition-colors">Our Khet</Link>
-        <Link to="#" className="hover:text-harvest-green transition-colors">Harvest Policy</Link>
-        <Link to="#" className="hover:text-harvest-green transition-colors">Bulk Orders</Link>
+    <div className="max-w-7xl mx-auto px-6 py-12">
+
+      <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center gap-10">
+
+        {/* Center Block (Mobile Focus) */}
+        <div className="flex flex-col items-center md:items-start gap-8 text-[11px] uppercase font-bold tracking-[0.18em]">
+
+          {/* Brand */}
+          <span className="text-zinc-900">
+            © 2026 dalal.io
+          </span>
+
+          {/* Links */}
+          <div className="flex flex-col items-center md:flex-row md:items-center gap-6 text-zinc-400">
+            <Link to="#" className="hover:text-harvest-green transition-colors">
+              Our Khet
+            </Link>
+            <Link to="#" className="hover:text-harvest-green transition-colors">
+              Harvest Policy
+            </Link>
+            <Link to="#" className="hover:text-harvest-green transition-colors">
+              Bulk Orders
+            </Link>
+          </div>
+
+          {/* Socials */}
+          <div className="flex gap-10 text-zinc-400 pt-2">
+            <a href="#" className="hover:text-harvest-green transition-colors">
+              Instagram
+            </a>
+            <a href="#" className="hover:text-harvest-green transition-colors">
+              Twitter
+            </a>
+          </div>
+
+        </div>
+
       </div>
-      <div className="flex gap-8 border-t border-zinc-50 pt-8 md:pt-0 md:border-none w-full md:w-auto justify-center">
-        <a href="#" className="hover:text-harvest-green transition-colors">Instagram</a>
-        <a href="#" className="hover:text-harvest-green transition-colors">Twitter</a>
-      </div>
+
     </div>
   </footer>
 );
@@ -55,9 +83,9 @@ export default function App() {
           <Footer />
 
           {/* WhatsApp Support - Essential for Indian Trust */}
-          <a 
-            href="https://wa.me/911234567890" 
-            target="_blank" 
+          <a
+            href="https://wa.me/911234567890"
+            target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-5 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:scale-110 transition-all flex items-center group overflow-hidden"
           >
